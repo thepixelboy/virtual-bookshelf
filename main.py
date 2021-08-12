@@ -7,7 +7,7 @@ bookshelf = []
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", bookshelf=bookshelf)
 
 
 @app.route("/add", methods=("GET", "POST"))
