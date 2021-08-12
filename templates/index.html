@@ -12,6 +12,8 @@
       <li>{{ book.title }}, by {{ book.author }}. {{ book.rating }}</li>
       {% endfor %}
     </ul>
+    {% else %}
+    <p>Your library is empty.</p>
     {% endif %}
     <a href="{{ url_for('add') }}">Add New Book</a>
   </body>
